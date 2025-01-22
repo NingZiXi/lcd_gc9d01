@@ -34,7 +34,7 @@
     lcd_gc9d01_printf(&lcd_string_handle, "Value: %d", value);     // 显示格式化字符串
 
 ```
-更多API接口请查看[lcd_gc9d01.h](include\lcd_gc9d01.h)
+更多API接口请查看[lcd_gc9d01.h](include/lcd_gc9d01.h)
 
 ## 贡献
 本项目采用 **MIT** 许可证，详情请参阅 [LICENSE](LICENSE) 文件。
