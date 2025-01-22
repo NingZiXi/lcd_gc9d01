@@ -5,7 +5,7 @@
 
 本项目提供了基本的图形绘制功能，如绘制像素点、线条、矩形、圆形、三角形等，并支持显示中英文字符和图片。
 
-|![picture1](picture\picture1.jpg){width=35%}|![picture2](picture\picture2.jpg){width=35%}|
+|![picture1](picture/picture1.jpg){width=35%}|![picture2](picture/picture2.jpg){width=35%}|
 
 
 在**menuconfig**或**lcd_gc9d01.h** 文件中，用户可以根据实际硬件连接配置引脚和屏幕参数
