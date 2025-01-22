@@ -1,0 +1,113 @@
+menu "LCD GC9D01 Configuration"
+
+    menu "Font Configuration"
+        config LCD_GC9D01_FONT_6x12
+            bool "Enable 6x12 Font"
+            default y
+            help
+                Enable the 6x12 font.
+
+        config LCD_GC9D01_FONT_11x17
+            bool "Enable 11x17 Font"
+            default n
+            help
+                Enable the 11x17 font.
+
+        config LCD_GC9D01_FONT_8x16
+            bool "Enable 8x16 Font"
+            default n
+            help
+                Enable the 8x16 font.
+
+        config LCD_GC9D01_FONT_13x22
+            bool "Enable 13x22 Font"
+            default n
+            help
+                Enable the 13x22 font.
+
+        config LCD_GC9D01_FONT_16x26
+            bool "Enable 16x26 Font"
+            default n
+            help
+                Enable the 16x26 font.
+
+        config LCD_GC9D01_CHINESE_16x16
+            bool "Enable Chinese 16x16 Font"
+            default n
+            help
+                Enable the Chinese 16x16 font.
+    endmenu
+
+    menu "Image Support"
+        config LCD_GC9D01_IMAGE
+            bool "Enable Image Support"
+            default n
+            help
+                Enable support for displaying images on the LCD GC9D01 display.
+    endmenu
+
+    menu "GPIO Pin Configuration"
+        config LCD_PIN_NUM_SCK
+            int "SCK Pin Number"
+            default 4
+            help
+                GPIO pin number for SCK.
+
+        config LCD_PIN_NUM_MOSI
+            int "MOSI Pin Number"
+            default 5
+            help
+                GPIO pin number for MOSI.
+
+        config LCD_PIN_NUM_RST
+            int "RST Pin Number"
+            default 6
+            help
+                GPIO pin number for RST.
+
+        config LCD_PIN_NUM_DC
+            int "DC Pin Number"
+            default 7
+            help
+                GPIO pin number for DC.
+
+        config LCD_PIN_NUM_CS
+            int "CS Pin Number"
+            default 15
+            help
+                GPIO pin number for CS.
+
+        config LCD_PIN_NUM_BL
+            int "Backlight Pin Number"
+            default 16
+            help
+                GPIO pin number for Backlight.
+    endmenu
+
+    menu "LCD Screen Parameters"
+        config LCD_COLUMN_NUMBER
+            int "LCD Column Number"
+            default 160
+            help
+                Number of columns in the LCD.
+
+        config LCD_LINE_NUMBER
+            int "LCD Line Number"
+            default 160
+            help
+                Number of lines in the LCD.
+
+        config LCD_COLUMN_OFFSET
+            int "LCD Column Offset"
+            default 0
+            help
+                Column offset for the LCD.
+
+        config LCD_LINE_OFFSET
+            int "LCD Line Offset"
+            default 0
+            help
+                Line offset for the LCD.
+    endmenu
+
+endmenu

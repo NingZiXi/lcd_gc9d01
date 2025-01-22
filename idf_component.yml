@@ -1,0 +1,10 @@
+version: 1.0.0
+license: "MIT"
+description: lcd_gc9d01
+url: https://github.com/NingZiXi/lcd_gc9d01
+files:
+  exclude:
+  - .git
+dependencies:
+  idf:
+    version: ">=5.3.1"
