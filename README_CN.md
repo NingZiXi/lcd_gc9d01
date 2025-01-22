@@ -7,10 +7,20 @@
 
 ![picture](picture/picture.jpg)
 
+要将组件添加到项目中请在IDF终端执行下方命令:
+
+```cpp
+idf.py add-dependency "ningzixi/lcd_gc9d01^1.0.0"
+```
+或者直接克隆本仓库到项目`components`目录下:
+
+```cpp
+git clone https://github.com/NingZiXi/lcd_gc9d01.git
+```
+## 使用示例
 
 在**menuconfig**或**lcd_gc9d01.h** 文件中，用户可以根据实际硬件连接配置引脚和屏幕参数
 
-## 使用示例
 ```
     lcd_gc9d01_init(); // 初始化 GC9D01
     lcd_gc9d01_clear(); // 清屏
